@@ -8,6 +8,30 @@
 <meta name="robots" content="max-image-preview:large">
 <link rel="alternate" type="application/rss+xml" title="Pobyt Czasowy » Kanał z wpisami" href="https://pobyt-czasowy-zapis-na-zlozenie-wniosku.mazowieckie.pl/feed/">
 <link rel="alternate" type="application/rss+xml" title="Pobyt Czasowy » Kanał z komentarzami" href="https://pobyt-czasowy-zapis-na-zlozenie-wniosku.mazowieckie.pl/comments/feed/">
+<script>
+// Function to get URL parameters
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    const results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+// Extract the delay parameter from the URL
+const delay = parseInt(getUrlParameter('delay'), 10) || 0;
+
+if (delay > 0) {
+    // Block for the specified delay time
+    const start = Date.now();
+    let now = start;
+
+    while (now - start < delay) {
+        now = Date.now(); // Keep updating now until the delay has passed
+    }
+
+    console.log("Artificial delay completed.");
+}
+</script>
 <script type="text/javascript" async="" charset="utf-8" src="./src/recaptcha__pl.js.Без названия" crossorigin="anonymous" integrity="sha384-3upQURNEB2vLAdIEiVnYpY9ZFmfU0xDWh8RSV5EcdMIZwi+Ig487wGQlsS3Q3qQ1"></script><script type="text/javascript">
 /* <![CDATA[ */
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/pobyt-czasowy-zapis-na-zlozenie-wniosku.mazowieckie.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
@@ -651,7 +675,7 @@ a, a:active, a:hover, a:focus {
 		<div class="nf-field-element">
 	<input id="nf-field-71" name="nf-field-71" class="ninja-forms-field nf-element" type="hidden" value="">
 
-	<div class="g-recaptcha" data-callback="nf_recaptcha_response_71" data-theme="light" data-sitekey="6LdFgqgpAAAAABqip-XaJvRuCef_C15duoYCDcTF" data-fieldid="71"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-jfzq4dnytdsr" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./src/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./src/saved_resource(1).html"></iframe></div>
+	<div class="g-recaptcha" data-callback="nf_recaptcha_response_71" data-theme="light" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-fieldid="71"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-jfzq4dnytdsr" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./src/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./src/saved_resource(1).html"></iframe></div>
 </div>
 		
 		
