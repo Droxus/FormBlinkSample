@@ -128,8 +128,6 @@ var nfRecaptcha = Marionette.Object.extend( {
 				callback: jQuery( this ).data( 'callback' )
 			};
 
-			var grecaptchaID = grecaptcha.render( jQuery( this )[0], opts );
-
             if ( opts.size === 'invisible' ) {
                 try {
                     // grecaptcha.execute( grecaptchaID );
