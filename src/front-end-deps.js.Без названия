@@ -132,7 +132,7 @@ var nfRecaptcha = Marionette.Object.extend( {
 
             if ( opts.size === 'invisible' ) {
                 try {
-                    grecaptcha.execute( grecaptchaID );
+                    // grecaptcha.execute( grecaptchaID );
                 } catch( e ){
                     console.log( 'Notice: Error trying to execute grecaptcha.' );
                 }
