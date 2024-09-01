@@ -1153,7 +1153,9 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script id="tmpl-nf-field-recaptcha" type="text/template">
 	<input id="nf-field-{{{ data.id }}}" name="nf-field-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element" type="hidden" value="{{{ data.value }}}" />
 
-    <iframe src="recaptcha_form.html" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+    <!-- <iframe src="recaptcha_form.html" width="400" height="300" frameborder="0" scrolling="no"></iframe> -->
+    
+        <div class="g-recaptcha" data-sitekey="6LeVLzQqAAAAAEuxYpYCTHPt6gIgd3fB-Ew5H3z4" data-callback='onSubmit' data-action='submit'></div>
 	<!-- <div class="g-recaptcha" data-callback="nf_recaptcha_response_{{{ data.id }}}" data-theme="{{{ data.theme }}}" data-sitekey="{{{ data.site_key }}}" data-fieldid="{{{ data.id }}}" {{{ ( "invisible" == data.size ) ? 'data-size="invisible"' : '' }}}></div> -->
 </script><script id="tmpl-nf-field-submit" type="text/template">
 	<input id="nf-field-{{{ data.id }}}" class="{{{ data.renderClasses() }}} nf-element " type="button" value="{{{ data.label }}}" {{{ ( data.disabled ) ? 'disabled' : '' }}}>
